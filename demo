@@ -1,0 +1,32 @@
+性能优化分析：
+1、项目为移动端项目，尽可能简化结构层标签
+2、尽可能少用图片，尽量直接用css3控制标签完成图片效果
+3、尽可能减少文件大小，压缩图片到无损最小值
+4、减少服务器请求次数，用原生态javascript代替zepto等前端框架
+
+切图-》重构-》前端-》优化
+减少图片文件，背景图片采用jpg格式，其它图片采用png24透明格式
+小型项目，直接采用html5+css3完成
+采用JavaScript控制html5Api完成前端特效
+测试并优化整体网站性能，采用wampServer为本地服务器测试环境
+
+
+box-shadow:是给对象实现图层阴影效果
+  /*box-shadow: 投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色;*/
+    -webkit-box-shadow: 0 0 10vm 10vm #ef1639;
+    -moz-box-shadow: 0 0 10vm 10vm #ef1639;
+    -ms-box-shadow: 0 0 10vm 10vm #ef1639;
+    -o-box-shadow: 0 0 10vm 10vm #ef1639;
+    box-shadow: 0 0 10vm 10vm #ef1639;
+开发标准手机宽度640
+
+defer 与 window.onload=function(){
+
+}
+
+ this.style.animationPlayState="running"; 兼容性不是很好，安卓4以下不能用 苹果一样
+
+ click在手机中300秒延迟手机中是触碰
+ html5中touchEvent事件
+
+ #page2.fadeOut 组合元素选择器
